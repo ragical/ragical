@@ -1,0 +1,9 @@
+[submodule "apps/ragical-intel"]
+	path = apps/ragical-intel
+	url = https://github.com/ragical/ragical-intel.git
+[submodule "apps/ragical-access"]
+	path = apps/ragical-access
+	url = https://github.com/ragical/ragical-access.git
+[submodule "apps/ragical-core"]
+	path = apps/ragical-core
+	url = https://github.com/ragical/ragical-core.git
