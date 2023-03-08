@@ -1,5 +1,5 @@
-import "@a11ywatch/react-a11ywatch-js/css/tailwind.css";
-import { Accessibility } from "ui";
+import "ragical-react-js/public/tailwind.css";
+import { Accessibility } from "../components/Accessibility";
 
 export default function Web() {
   return (

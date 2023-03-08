@@ -1,3 +1,2 @@
-import * as React from "react";
+// allow wildcard exports for turbo building
 export * from "./Button";
-export {Accessibility} from './Accessibility'

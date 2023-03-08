@@ -1,0 +1,9 @@
+dist
+/node_modules
+storybook-static
+.DS_Store
+.out
+/public/tailwind.css
+
+# local env files
+.env*.local

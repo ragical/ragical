@@ -18,6 +18,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `ragical-react-js`: react components for building full features
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -45,3 +46,7 @@ To develop all apps and packages, run the following command:
 pnpm run dev
 # open http://localhost:3000/ in your browser
 ```
+
+### Help
+
+If you run into issues with modules not being found run the command `pnpm install`.
