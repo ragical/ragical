@@ -10,12 +10,12 @@ const distPackageJson =
   JSON.stringify(
     packageJson,
     (_key, value) => {
-      if (typeof value === "string" && value.startsWith("./dist/")) {
+      if (typeof value === "string" && value.startsWith("./src/")) {
         const parts = value.split("/");
         parts.splice(1, 1); // remove dist
         return parts.join("/");
       }
-      return value;
+      return value.replace(".ts", ".js");
     },
     2
   ) + "\n";
