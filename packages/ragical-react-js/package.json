@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "pnpm run build:styles",
     "test": "jest",
-    "build": "tsc && pnpm run build:styles",
-    "build:styles": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/tailwind.css && cp ./public/tailwind.css ./dist/css/tailwind.css",
+    "build": "tsc && pnpm run build:styles && cp ./public/tailwind.css ./dist/css/tailwind.css",
+    "build:styles": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/tailwind.css",
     "postbuild": "npm run prepdist",
     "storybook": "npm run build && NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 --ci",
     "build-storybook": "npm run build && build-storybook",
