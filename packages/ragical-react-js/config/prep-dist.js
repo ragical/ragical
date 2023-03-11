@@ -13,9 +13,9 @@ const distPackageJson =
       if (typeof value === "string" && value.startsWith("./src/")) {
         const parts = value.split("/");
         parts.splice(1, 1); // remove dist
-        return parts.join("/");
+        return parts.join("/").replace(".ts", ".js");
       }
-      return value.replace(".ts", ".js");
+      return value;
     },
     2
   ) + "\n";

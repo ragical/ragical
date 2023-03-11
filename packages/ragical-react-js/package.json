@@ -8,8 +8,10 @@
   "license": "MIT",
   "homepage": "https://github.com/wcat-org/ragical#readme",
   "scripts": {
+    "dev": "pnpm run build:styles",
     "test": "jest",
-    "build": "tsc && NODE_ENV=production npx tailwindcss -i ./src/css/tailwind.css -o ./dist/css/tailwind.css && cp ./dist/css/tailwind.css ./public/tailwind.css",
+    "build": "tsc && pnpm run build:styles",
+    "build:styles": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/tailwind.css && cp ./public/tailwind.css ./dist/css/tailwind.css",
     "postbuild": "npm run prepdist",
     "storybook": "npm run build && NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 --ci",
     "build-storybook": "npm run build && build-storybook",
@@ -41,9 +43,10 @@
     "recast": "^0.20.5",
     "regenerator-runtime": "^0.13.5",
     "tailwindcss": "3.2.4",
+    "tsconfig": "workspace:*",
     "ts-jest": "^25.3.1",
     "ts-loader": "^6.2.2",
-    "typescript": "workspace:*",
+    "typescript": "4.9.5",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
